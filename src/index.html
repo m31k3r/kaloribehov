@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Räkna ut kaloribehov (… kalorier per dag, kaloriintag) | Kaloribehov.se</title>
+    <link rel="canonical" href="https://www.kaloribehov.se/">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <div class="container red-text-shadow text-center">
+        <h1 id="title">Räkna ut kaloribehov, …</h1>
+        <h4 id="subtitle">… kalorier per dag, kaloriintag, energibehov, …</h4>
+      </div>
+      <div class="container mw40 red-text-shadow">
+        <div class="container">
+          <div class="row ai-center">
+            <div class="col-grow">
+              <input id="i-man" type="button" value="MAN" style="width:100%"/>
+            </div>
+            <div class="col-grow">
+              <input id="i-woman" type="button" value="KVINNA" style="width:100%"/>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row ai-center">
+            <div class="col-shrink">
+              <label for="i-weight">VIKT</label>
+            </div>
+            <div class="col-grow">
+              <input id="i-weight" type="number" placeholder="80">
+            </div>
+            <div class="col-shrink">
+              <div class="input-unit">
+                <label for="i-weight">KG</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row ai-center">
+            <div class="col-shrink">
+              <div style="min-width:6.4rem">
+                <label for="i-length">LÄNGD</label>
+              </div>
+            </div>
+            <div class="col-grow">
+              <input id="i-length" type="number" placeholder="180">
+            </div>
+            <div class="col-shrink">
+              <div class="input-unit">
+                <label for="i-length">CM</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row ai-center">
+            <div class="col-shrink">
+              <div style="min-width:6.4rem">
+                <label for="i-age">ÅLDER</label>
+              </div>
+            </div>
+            <div class="col-grow">
+              <input id="i-age" type="number" placeholder="40">
+            </div>
+            <div class="col-shrink">
+              <div class="input-unit">
+                <label for="i-age">ÅR</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row ai-center">
+            <div class="col-shrink">
+              <label for="i-exercise">AKTIVITETSNIVÅ</label>
+            </div>
+            <div class="col-grow">
+              <select id="i-exercise">
+                <option value="1.1">EXTREMT LÅG</option>
+                <option value="1.3">LÅG</option>
+                <option value="1.5" selected>NORMAL</option>
+                <option value="1.7">HÖG</option>
+                <option value="1.9">EXTREMT HÖG</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row ai-center">
+            <div class="col-grow">
+              <span id="error"></span>
+            </div>
+            <div class="col-shrink">
+              <input id="calculate" type="button" value="BERÄKNA"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="result" class="container red-text-shadow" style="min-height:28rem;text-align:center"></div>
+      <div class="container mw60">
+        <p><em>Kaloriräknaren använder <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pubmed/2305711">Mifflin-St. Jeor-ekvationen</a>, en effektiviserad och granskad variant av den ursprungliga <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Harris%E2%80%93Benedict_equation">Harris–Benedict-ekvationen</a>, för att få fram basalomsättningen som multipliceras med aktivitetsnivån.</em></p>
+      </div>
+    </main>
+    <footer>
+      <div class="container text-center">
+        <small>mail@kaloribehov.se</small>
+        <div>© 2017 Kaloribehov.se™</div>
+      </div>
+    </footer>
+    <script async src="client.js"></script>
+  </body>
+</html>

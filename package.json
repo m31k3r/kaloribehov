@@ -1,0 +1,23 @@
+{
+  "name": "kaloribehov",
+  "version": "0.0.1",
+  "description": "www.kaloribehov.se (MVP)",
+  "main": "./src/app.js",
+  "scripts": {
+    "dev": "open dist/index.html && nodemon . -e css,html,js --watch src",
+    "rebuild": "rm -rf dist && cp -r src/statics/ dist && node ."
+  },
+  "repository": "https://github.com/m31k3r/kaloribehov",
+  "author": "m31k3r",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-preset-latest": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "cssnano": "^3.10.0",
+    "html-minifier": "^3.5.3",
+    "postcss": "^6.0.9",
+    "uglify-js": "^3.0.27"
+  }
+}
